@@ -178,6 +178,19 @@ body.page-exit {
             }
         }
 
+        .mobile-notice {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 90%;
+    z-index: 10;
+}
+
     </style>
 </head>
 
@@ -239,5 +252,9 @@ document.querySelectorAll("a").forEach(link => {
 });
 </script>
 
+   <p class="mobile-notice">
+    If on Android/iOS, change to horizontal mode to fit text/images that are cut out.
+</p> 
+    
 </body>
 </html>
