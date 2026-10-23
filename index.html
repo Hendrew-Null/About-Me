@@ -205,6 +205,71 @@ body.page-exit {
     z-index: 10;
 }
   
+.music-player-section {
+    padding: 80px 10%;
+    background: #0d0d0d;
+    color: white;
+}
+
+.music-label,
+.player-overline {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.music-player-section h2 {
+    font-size: clamp(30px, 5vw, 55px);
+    margin: 15px 0 30px;
+}
+
+.player-card {
+    max-width: 650px;
+    padding: 25px;
+    border: 1px solid #303030;
+    background: #111;
+}
+
+.player-card h3 {
+    font-size: 25px;
+    margin: 15px 0 8px;
+}
+
+.player-artist {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.youtube-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.youtube-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.player-footer {
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+@media (max-width: 600px) {
+    .music-player-section {
+        padding: 60px 6%;
+    }
+
+    .player-card {
+        padding: 18px;
+    }
+}
+
         
     </style>
 </head>
@@ -274,6 +339,29 @@ document.querySelectorAll("a").forEach(link => {
     <p class="last-updated">
     Last updated — 23 October 2026,6:35 PM
 </p>
+
+    <section class="music-player-section">
+    <p class="music-label">PERSONAL SOUNDTRACK</p>
+    <h2>NOW PLAYING</h2>
+
+    <div class="player-card">
+        <p class="player-overline">SOVIET ROCK ARCHIVE</p>
+        <h3>Группа крови</h3>
+        <p class="player-artist">КИНО · Viktor Tsoi</p>
+
+        <div class="youtube-container">
+            <iframe
+                src="https://www.youtube.com/embed/-T54eIOQz6w?si=sRAA9NElelDLZsEa"
+                title="Kino - "фильм (film)
+                allow="encrypted-media; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="player-footer">A COLLECTION OF SOUND & MEMORY</p>
+    </div>
+</section>
     
 </body>
 </html>
